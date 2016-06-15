@@ -1,0 +1,20 @@
+<h1> Historical Figure </h1>
+ID: <%= @figure.id %><br>
+
+<br></br>
+
+<h4>Name: </h4><%= @figure.name %>
+
+<br></br>
+
+<h4>Historical Landmarks: </h4>
+<% @figure.landmarks.each do |landmark| %>
+  <p><%= landmark.name %></p>
+<% end %>
+
+<h4> Titles: </h4>
+<% @figure.titles.each do |title| %>
+  <p><%= title.name %></p>
+<% end %>
+
+<a href="/figures">Home</a>
